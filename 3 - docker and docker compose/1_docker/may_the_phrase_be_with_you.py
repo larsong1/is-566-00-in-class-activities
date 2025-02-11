@@ -25,7 +25,7 @@ PHRASES = (
 
 def star_wars_quote():
     phrase = random.choice(PHRASES)
-    ascii_art = pyfiglet.Figlet()
+    ascii_art = pyfiglet.Figlet(font="starwars")
     print(ascii_art.renderText(phrase))
 
 if __name__ == "__main__":
